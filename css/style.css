@@ -9,7 +9,7 @@
   --color-gray-light-1: #f7f7f7;
   --color-gray-light-2: #eee;
 
-  --color-emarald: #10b981;
+  --color-emarald: #a7f3d0;
 
   --color-sky: #7dd3fc;
 
@@ -264,10 +264,224 @@ body {
 /* COLLECTIONS */
 .section-collection {
   margin: 8rem 4rem 4rem 4rem;
+  color: var(--color-primary);
+}
+
+.collection__head {
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+.collection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.collection__image {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.collection__image:hover {
+  box-shadow: 0 2rem 4rem var(--color-gray);
+  border-radius: 8px;
 }
 
 .collection__photo {
-  width: 30rem;
-  height: 10rem;
+  width: 40rem;
+  height: 20rem;
   border-radius: 8px;
+}
+
+.collection__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-primary-light);
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/*//////////////////////////*/
+/* PROPERTIES */
+.section-properties {
+  background-image: url(../img/lakes-and-rvers.png);
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 0;
+}
+
+.properties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-primary-light);
+}
+
+.properties i {
+  font-size: 3.5rem;
+}
+
+.properties a,
+.section-list a {
+  color: currentColor;
+}
+
+.properties__head {
+  font-size: 3.5rem;
+  margin: 3rem;
+}
+
+.btn-properties {
+  background-color: #f87171;
+  border: none;
+  color: currentColor;
+  padding: 1.2rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-properties:hover {
+  box-shadow: 0 0.1rem 2rem #000;
+}
+
+/*//////////////////////////*/
+/* TESTIMONIALS */
+.section-testimonials {
+  background-color: var(--color-emarald);
+  padding: 7rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.testimonial__photo {
+  height: 10rem;
+  margin-right: 3rem;
+}
+
+.testimonial__card {
+  background-color: var(--color-gray-light-1);
+  border-radius: 7px;
+  padding: 2rem;
+  flex: 0 0 22%;
+  transition: all 0.4s;
+}
+
+.testimonial__card:hover {
+  transform: scale(1.04);
+}
+
+.testimonial__card i {
+  color: #34d399;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial__text {
+  font-size: 1.8rem;
+}
+
+.testimonial__name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.testimonial__link {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-gray);
+  padding-bottom: 0.2rem;
+  transition: all 0.4s;
+}
+
+.testimonial__link:hover {
+  color: #0891b2;
+}
+
+/*//////////////////////////*/
+/* LIST */
+.section-list {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/glamping.png);
+  background-position: bottom;
+  background-size: cover;
+  color: var(--color-primary-light);
+  padding: 4rem 4rem 12rem 4rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__heading {
+  font-size: 3.4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.list__text {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.list__content {
+  border-top: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.list__article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list__article:not(:last-child) {
+  margin-bottom: 0.4rem;
+  margin-top: 3rem;
+}
+
+.list__article:last-child {
+  margin-bottom: 3rem;
+}
+
+.list__item {
+  background-color: var(--color-cyan-dark);
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 100px;
+}
+
+.section-list .btn-properties {
+  margin-top: 3rem;
+}
+
+footer {
+  min-height: 20rem;
 }
