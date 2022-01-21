@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="An application that traverses different tours for explorers. It provides directions on how you spend your holiday"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon-2.png" type="image/png" />
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Google fonts CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- JavaScript files -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+    <title>Traveline - Tours and travels</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__logo">
+        <img src="img/favicon-2.png" class="navigation__photo" alt="Logo" />
+        <span class="navigation__text">Traveline</span>
+      </div>
+      <div class="navigation__nav-bar">
+        <ul class="nav navigation__list">
+          <li class="navigation__item nav-item">
+            <a href="#features" class="navigation__link nav-link">Features</a>
+          </li>
+          <li class="navigation__item nav-item">
+            <a href="#collections" class="navigation__link nav-link"
+              >Collections</a
+            >
+          </li>
+          <li class="navigation__item nav-item">
+            <a href="#properties" class="navigation__link nav-link"
+              >Properties</a
+            >
+          </li>
+          <li class="navigation__item nav-item">
+            <a href="#list" class="navigation__link nav-link">List with us</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link btn-login">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="header__content">
+        <h1 class="heading-primary">
+          Traveline <br />
+          somewhere special
+        </h1>
+        <p class="header__paragraph">Popular locations</p>
+        <div class="header__buttons">
+          <button class="btn-header">Nairobi</button>
+          <button class="btn-header">Nakuru</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="features" class="section-features">
+      <h2 class="features__heading">Featured staycations</h2>
+      <div class="section-features__flex">
+        <div class="features">
+          <div class="features__image">
+            <figure class="features__card">
+              <img
+                src="img/feature-1.png"
+                alt="Feature photo"
+                class="features__photo"
+              />
+              <h3 class="features__card--heading">
+                From <span>kshs 2500</span>/month
+              </h3>
+            </figure>
+          </div>
+          <div class="features__content">
+            <h4 class="features__content--heading">Country Cabin</h4>
+            <p class="features__location">
+              <i class="fas fa-location-arrow"></i>
+              <span>Location</span>
+              <a href="" class="features__location--link">Nairobi</a>
+            </p>
+
+            <p class="features__paragraph">
+              Charming treehouse for two in the Nairobi countryside. Feel your
+              cares float away past the tree tops as you relax in the hot tub
+              below.
+            </p>
+            <div class="features__cta">
+              <p class="features__cta-1">
+                <i class="fas fa-dog"></i>
+                <span>Dogs welcome</span>
+              </p>
+              <p class="features__cta-1">
+                <i class="fas fa-user"></i>
+                <span>Up to 4 guests</span>
+              </p>
+            </div>
+            <h5 class="features__feature">Features</h5>
+            <div class="features__feature--content">
+              <p class="features__feature--paragraph">
+                <i class="fas fa-shower"></i>
+                Bath
+              </p>
+              <p class="features__feature--paragraph">
+                <i class="fas fa-door-closed"></i>
+                <span>BBQ</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="features__image">
+            <figure class="features__card">
+              <img
+                src="img/feature-2.png"
+                alt="Feature photo"
+                class="features__photo"
+              />
+              <h3 class="features__card--heading">
+                From <span>kshs 3300</span>/month
+              </h3>
+            </figure>
+          </div>
+          <div class="features__content">
+            <h4 class="features__content--heading">Lost world log cabin</h4>
+            <p class="features__location">
+              <i class="fas fa-location-arrow"></i>
+              <span>Location</span>
+              <a href="" class="features__location--link">Nakuru</a>
+            </p>
+
+            <p class="features__paragraph">
+              Lost log world cabin within Nakuru city. Gives your holiday a
+              fresh touch. Charming view within the city. It helps you relax and
+              feel the breeze.
+            </p>
+            <div class="features__cta">
+              <p class="features__cta-1">
+                <i class="fas fa-user"></i>
+                <span>Up to 14 guests</span>
+              </p>
+            </div>
+            <h5 class="features__feature">Features</h5>
+            <div class="features__feature--content">
+              <p class="features__feature--paragraph">
+                <i class="fas fa-shower"></i>
+                Bath
+              </p>
+              <p class="features__feature--paragraph">
+                <i class="fas fa-fire"></i>
+                <span>Cooker</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="features__image">
+            <figure class="features__card">
+              <img
+                src="img/feature-3.png"
+                alt="Feature photo"
+                class="features__photo"
+              />
+              <h3 class="features__card--heading">
+                From <span>kshs 5400</span>/month
+              </h3>
+            </figure>
+          </div>
+          <div class="features__content">
+            <h4 class="features__content--heading">Modern living</h4>
+            <p class="features__location">
+              <i class="fas fa-location-arrow"></i>
+              <span>Location</span>
+              <a href="" class="features__location--link">Nakuru</a>
+            </p>
+
+            <p class="features__paragraph">
+              We got your holiday covered. Live in a modern house where magic
+              happens. The house is well furnished to give you a comfortable
+              holiday.
+            </p>
+            <div class="features__cta">
+              <p class="features__cta-1">
+                <i class="fas fa-user"></i>
+                <span>Up to 4 guests</span>
+              </p>
+            </div>
+            <h5 class="features__feature">Features</h5>
+            <div class="features__feature--content">
+              <p class="features__feature--paragraph">
+                <i class="fas fa-shower"></i>
+                Bath
+              </p>
+              <p class="features__feature--paragraph">
+                <i class="fas fa-door-closed"></i>
+                <span>BBQ</span>
+              </p>
+              <p class="features__feature--paragraph">
+                <i class="fas fa-fire"></i>
+                <span>Cooker</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="section-collection">
+      <h2 class="collection__head">Collections</h2>
+      <div class="collection">
+        <figure class="collection__image">
+          <img
+            src="img/lakes-and-rvers.png"
+            alt="Lakes and rivers"
+            class="collection__photo"
+          />
+          <h2 class="collection__heading">Lakes and rivers</h2>
+        </figure>
+        <figure class="collection__image">
+          <img
+            src="img/lighthouse.png"
+            alt="Lighthouse"
+            class="collection__photo"
+          />
+          <h2 class="collection__heading">Lighthouse</h2>
+        </figure>
+        <figure class="collection__image">
+          <img src="img/barn.png" alt="Barns" class="collection__photo" />
+          <h2 class="collection__heading">Barn</h2>
+        </figure>
+        <figure class="collection__image">
+          <img
+            src="img/glamping.png"
+            alt="Glamping"
+            class="collection__photo"
+          />
+          <h2 class="collection__heading">Glamping</h2>
+        </figure>
+        <figure class="collection__image">
+          <img
+            src="img/treehouse.png"
+            alt="Treehouse"
+            class="collection__photo"
+          />
+          <h2 class="collection__heading">Treehouse</h2>
+        </figure>
+        <figure class="collection__image">
+          <img src="img/feature-1.png" alt="Cabin" class="collection__photo" />
+          <h2 class="collection__heading">Cabin</h2>
+        </figure>
+      </div>
+    </section>
+  </body>
+</html>
