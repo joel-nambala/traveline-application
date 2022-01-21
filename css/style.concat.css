@@ -107,7 +107,7 @@ body {
 }
 
 .header__content {
-  padding-top: 8rem;
+  padding-top: 4rem;
 }
 
 .header__paragraph {
@@ -270,4 +270,13 @@ body {
   width: 30rem;
   height: 10rem;
   border-radius: 8px;
+}
+
+
+.heading-primary {
+  color: var(--color-primary-light);
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 2rem 4rem #1f2937;
 }
