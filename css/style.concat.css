@@ -679,15 +679,16 @@ footer hr {
 }
 
 @media (max-width: 570px) {
-  .heading-primary {
+  .header h1 {
     font-size: 5rem;
   }
 }
 
 @media (max-width: 510px) {
-  .heading-primary {
+  .header h1 {
     font-size: 4rem;
   }
+
   .section-features__flex {
     width: 95%;
   }
